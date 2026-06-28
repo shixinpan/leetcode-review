@@ -49,3 +49,32 @@ public class Main {
         System.out.println(secondLargest(nums)); // 5
     }
 }
+
+
+# Given a string, return each character frequency 
+input:    "ababshj"
+output:    1122111
+
+public class Main {
+    public static String getFrequencyString(String s){
+        HashMap<Character,Integer> map = new HashMap<>();
+        StringBuilder result = new StringBuilder();
+        
+        for(char c : s.toCharArray()){
+            int count = map.getOrDefault(c,0)+1;
+            map.put(c,count);
+            result.append(count);
+        }
+        return result.toString();
+        
+    }
+    
+    public static void main(String[] args) {
+        String s = "aabhghs";
+        System.out.println(getFrequencyString(s));
+    }
+}
+
+
+
+
