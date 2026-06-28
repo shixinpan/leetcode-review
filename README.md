@@ -53,7 +53,7 @@ public class Main {
 
 # Given a string, return each character frequency 
 input:    "ababshj"
-output:    1122111
+output:    "1122111"
 
 public class Main {
     public static String getFrequencyString(String s){
